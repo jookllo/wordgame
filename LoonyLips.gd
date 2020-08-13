@@ -11,6 +11,10 @@ func _ready():
 func _on_PlayerText_text_entered(new_text):
 	updatePlayerText(new_text)
 
+func _on_TextureButton_pressed():
+	var words = $VBoxContainer/HBoxContainer/PlayerText.text
+	updatePlayerText(words)
+
 func updatePlayerText (new_text):
 	$VBoxContainer/Words.text = new_text
-	$VBoxContainer/PlayerText.clear()
+	$VBoxContainer/HBoxContainer/PlayerText.clear()

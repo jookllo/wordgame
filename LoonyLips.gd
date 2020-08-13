@@ -7,3 +7,10 @@ func _ready():
 
 	$VBoxContainer/Words.text = "Hii NI text BudAAAAAAA " + person[2]
 	
+
+func _on_PlayerText_text_entered(new_text):
+	updatePlayerText(new_text)
+
+func updatePlayerText (new_text):
+	$VBoxContainer/Words.text = new_text
+	$VBoxContainer/PlayerText.clear()

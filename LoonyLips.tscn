@@ -62,4 +62,5 @@ max_length = 20
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="text_entered" from="VBoxContainer/PlayerText" to="." method="_on_PlayerText_text_entered"]
 [connection signal="text_entered" from="VBoxContainer/PlayerText" to="." method="_on_Sentenceboi_text_entered"]
